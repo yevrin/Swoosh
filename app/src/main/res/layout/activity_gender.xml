@@ -14,9 +14,10 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"/>
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="1.0"
+            android:contentDescription="@string/background_image"/>
     <TextView
-            android:text="Desired League:"
+            android:text="@string/leagueOptionLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/h1GenderTxt" android:fontFamily="@font/montserrat"
@@ -30,9 +31,9 @@
             android:id="@+id/logoGenderTxt"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" android:contentDescription="@string/logo_image"/>
     <Button
-            android:text="NEXT"
+            android:text="@string/nextLbl"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/nextGenderBtn" android:layout_marginBottom="16dp"
@@ -49,7 +50,7 @@
             android:layout_marginStart="16dp" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/h1GenderTxt">
         <ToggleButton
-                android:text="Mens"
+                android:text="@string/mensLbl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/menGenderBtn" android:fontFamily="@font/montserrat"
@@ -57,9 +58,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:singleLine="true" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
-                android:textOff="Mens" android:textOn="Mens" android:background="@drawable/swoosh_toggle"/>
+                android:textOff="@string/mensLbl" android:textOn="@string/mensLbl" android:background="@drawable/swoosh_toggle"
+                android:textAllCaps="false"/>
         <ToggleButton
-                android:text="Womens"
+                android:text="@string/womensLbl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/womensGenderBtn"
@@ -67,10 +69,10 @@
                 android:fontFamily="@font/montserrat" android:textSize="18sp" android:textAlignment="center"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:textOff="Womens"
-                android:textOn="Womens" android:background="@drawable/swoosh_toggle"/>
+                android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:textOff="@string/womensLbl"
+                android:textOn="@string/womensLbl" android:background="@drawable/swoosh_toggle" android:textAllCaps="false"/>
         <ToggleButton
-                android:text="Co-ed"
+                android:text="@string/co_edLbl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/coedGenderBtn" android:textSize="18sp"
@@ -78,7 +80,7 @@
                 android:fontFamily="@font/montserrat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:textOff="Co-ed"
-                android:textOn="Co-ed" android:background="@drawable/swoosh_toggle"/>
+                android:layout_marginBottom="8dp" android:layout_marginTop="8dp" android:textOff="@string/co_edLbl"
+                android:textOn="@string/co_edLbl" android:background="@drawable/swoosh_toggle" android:textAllCaps="false"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
