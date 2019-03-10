@@ -10,5 +10,9 @@
     <string name="startLbl">GET STARTED</string>
     <string name="welcomeH1">GO ALL IN</string>
     <string name="welcomeH2">ON GOING ALL OUT</string>
-    <string name="welcomeH3">Find a team in your city and domintate the league</string>
+    <string name="welcomeH3">Find a team in your city and dominate the league</string>
+    <string name="finishLbl">FINISH</string>
+    <string name="skillOptionLbl">I am a:</string>
+    <string name="ballerLbl">Baller</string>
+    <string name="beginnerLbl">Beginner</string>
 </resources>

@@ -40,7 +40,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/bckgrndGenderImg" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="16dp" android:background="@drawable/swoosh_button"
-            android:fontFamily="@font/montserrat" android:textSize="18sp" android:textColor="@android:color/white"/>
+            android:fontFamily="@font/montserrat" android:textSize="18sp" android:textColor="@android:color/white"
+            android:onClick="genderNextClick"/>
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
