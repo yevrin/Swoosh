@@ -44,7 +44,7 @@
             app:layout_constraintEnd_toEndOf="@+id/h1WelcomeTxt" android:textStyle="bold"
             android:textAlignment="center"/>
     <TextView
-            android:text="Find a team in your city & domintate the league"
+            android:text="Find a team in your city and domintate the league"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/h3WelcomeTxt" android:textColor="@android:color/white"
@@ -57,10 +57,10 @@
             android:text="GET STARTED"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/startWelcomeBtn" android:layout_marginBottom="8dp"
+            android:id="@+id/startWelcomeBtn" android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="@+id/bckgrndWelcomeImg" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:fontFamily="@font/montserrat" android:textSize="18sp"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:fontFamily="@font/montserrat" android:textSize="18sp"
             android:textColor="@android:color/white" android:background="@drawable/swoosh_button"/>
 
 </android.support.constraint.ConstraintLayout>
