@@ -4,28 +4,30 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.swoosh.Model.Player
 import com.example.swoosh.R
-import com.example.swoosh.Utilities.EXTRA_GENDER
-import com.example.swoosh.Utilities.EXTRA_SKILL_LVL
+import com.example.swoosh.Utilities.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_skill_level.*
 
 class SkillLevelActivity : BaseActivity() {
 
-    var gender = ""
-    var selectedSkillLvl = ""
+    //var gender = ""
+    //var selectedSkillLvl = ""
+    //var player = Player("", "")
+    lateinit var player : Player
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skill_level)
-        gender = intent.getStringExtra(EXTRA_GENDER)
+        player = intent.getParcelableExtra(EXTRA_PLAYER)
         //println("LifeCycle ${gender}")
     }
-
     fun onFinishClick(view: View){
-        if(!selectedSkillLvl.isEmpty()){
+        if(!player.skillLevel.isEmpty()){
             val finishIntent = Intent(this, FinishActivity::class.java)
-            finishIntent.putExtra(EXTRA_GENDER, gender)
-            finishIntent.putExtra(EXTRA_SKILL_LVL, selectedSkillLvl)
+            //finishIntent.putExtra(EXTRA_GENDER, gender)
+            //finishIntent.putExtra(EXTRA_SKILL_LVL, selectedSkillLvl)
+            finishIntent.putExtra(EXTRA_PLAYER, player)
             startActivity(finishIntent)
         }else{
             Toast.makeText(this, "Please select a skill level", Toast.LENGTH_SHORT).show()
@@ -34,12 +36,12 @@ class SkillLevelActivity : BaseActivity() {
 
     fun onBeginnerClick(view: View){
         ballerSkillLvlBtn.isChecked = false
-        selectedSkillLvl = "beginner"
+        player.skillLevel = "beginner"
     }
 
     fun onBallerClick(view: View){
         beginnerSkillLvlBtn.isChecked = false
-        selectedSkillLvl = "baller"
+        player.skillLevel = "baller"
     }
 
 }
